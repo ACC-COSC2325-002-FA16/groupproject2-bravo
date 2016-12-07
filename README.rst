@@ -10,3 +10,4 @@ Equipment:
 - Breadboard
 - 10k Potentiometer
 - 16x2 LCD Screen
+- Temperature Sensor
