@@ -1,5 +1,7 @@
 # Team Bravo: Group Project 2
-Group Members: Angelo Renteria, Colby Tang, Colton Eastland
+
+Group Members: *Angelo Renteria, Colby Tang, Colton Eastland*
+
 Equipment: 
 
 - Arduino Uno
