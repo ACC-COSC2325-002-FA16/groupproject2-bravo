@@ -1,4 +1,6 @@
-# Team Bravo: Group Project 2
+=====
+Team Bravo: Group Project 2
+=====
 
 Group Members: *Angelo Renteria, Colby Tang, Colton Eastland*
 
