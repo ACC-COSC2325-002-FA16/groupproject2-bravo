@@ -19,17 +19,24 @@ This page should identify the device and microcontroller platform your project u
 
 -Temperature Sensor (LM35)
 
-- 10k Potentiometer
+-10k Potentiometer
 
 **Table of Contents**
 
-Introduction			1
-The Microcontroller Platform	2
-The Test Device									
+Introduction			                    1
+
+The Microcontroller Platform	        2
+
+The Test Device			
+
 Development tools								
+
 Experiment									
-Conclusion			3
+
+Conclusion			                      3
+
 Contributions									
+
 Project Code			
 
 **Introduction**
