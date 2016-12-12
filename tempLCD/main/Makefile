@@ -1,6 +1,7 @@
 TARGET	= main1
 
 CSRCS 	= $(wildcard *.c)
+ASRCS	= $(wildcard *.S)
 INTTBL	= FALSE
 
 # board definition

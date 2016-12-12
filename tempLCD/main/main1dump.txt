@@ -50,11 +50,11 @@ Disassembly of section .text:
   7c:	1d 92       	st	X+, r1
 
 0000007e <.do_clear_bss_start>:
-  7e:	a1 30       	cpi	r26, 0x01	; 1
+  7e:	a4 30       	cpi	r26, 0x04	; 4
   80:	b1 07       	cpc	r27, r17
   82:	e1 f7       	brne	.-8      	; 0x7c <.do_clear_bss_loop>
   84:	0e 94 48 00 	call	0x90	; 0x90 <main>
-  88:	0c 94 6a 00 	jmp	0xd4	; 0xd4 <_exit>
+  88:	0c 94 6e 00 	jmp	0xdc	; 0xdc <_exit>
 
 0000008c <__bad_interrupt>:
   8c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -74,27 +74,26 @@ Disassembly of section .text:
   a6:	fc 01       	movw	r30, r24
   a8:	10 82       	st	Z, r1
   aa:	10 92 00 01 	sts	0x0100, r1
-  ae:	80 91 00 01 	lds	r24, 0x0100
-  b2:	0e 94 5e 00 	call	0xbc	; 0xbc <sonar_pulse>
-  b6:	80 93 00 01 	sts	0x0100, r24
-  ba:	f9 cf       	rjmp	.-14     	; 0xae <main+0x1e>
+  ae:	10 92 01 01 	sts	0x0101, r1
+  b2:	10 92 02 01 	sts	0x0102, r1
+  b6:	10 92 03 01 	sts	0x0103, r1
+  ba:	80 e0       	ldi	r24, 0x00	; 0
+  bc:	90 e0       	ldi	r25, 0x00	; 0
+  be:	a0 ee       	ldi	r26, 0xE0	; 224
+  c0:	b0 e4       	ldi	r27, 0x40	; 64
+  c2:	80 93 00 01 	sts	0x0100, r24
+  c6:	90 93 01 01 	sts	0x0101, r25
+  ca:	a0 93 02 01 	sts	0x0102, r26
+  ce:	b0 93 03 01 	sts	0x0103, r27
+  d2:	f3 cf       	rjmp	.-26     	; 0xba <main+0x2a>
 
-000000bc <sonar_pulse>:
-  bc:	cf 93       	push	r28
-  be:	df 93       	push	r29
-  c0:	1f 92       	push	r1
-  c2:	cd b7       	in	r28, 0x3d	; 61
-  c4:	de b7       	in	r29, 0x3e	; 62
-  c6:	89 83       	std	Y+1, r24	; 0x01
-  c8:	89 81       	ldd	r24, Y+1	; 0x01
-  ca:	89 5f       	subi	r24, 0xF9	; 249
-  cc:	0f 90       	pop	r0
-  ce:	df 91       	pop	r29
-  d0:	cf 91       	pop	r28
-  d2:	08 95       	ret
+000000d4 <readTemp>:
+  d4:	85 e0       	ldi	r24, 0x05	; 5
+  d6:	80 93 00 01 	sts	0x0100, r24
+  da:	08 95       	ret
 
-000000d4 <_exit>:
-  d4:	f8 94       	cli
+000000dc <_exit>:
+  dc:	f8 94       	cli
 
-000000d6 <__stop_program>:
-  d6:	ff cf       	rjmp	.-2      	; 0xd6 <__stop_program>
+000000de <__stop_program>:
+  de:	ff cf       	rjmp	.-2      	; 0xde <__stop_program>
