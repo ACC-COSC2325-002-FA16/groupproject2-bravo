@@ -1,6 +1,8 @@
 **Notes for Ubuntu**
 
-- make main1.elf
+- make
+
+  - make main1.elf
 
   - avr-objdump -d main1.elf
 
