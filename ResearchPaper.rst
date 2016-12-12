@@ -24,12 +24,18 @@ This page should identify the device and microcontroller platform your project u
 **Table of Contents**
 
 Introduction			1
+
 The Microcontroller Platform	2
-The Test Device									
+The Test Device			
+
 Development tools								
+
 Experiment									
+
 Conclusion			3
+
 Contributions									
+
 Project Code			
 
 **Introduction**
