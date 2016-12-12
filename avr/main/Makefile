@@ -1,4 +1,4 @@
-TARGET	= main1
+TARGET	= main
 
 CSRCS 	= $(wildcard *.c)
 ASRCS	= $(wildcard *.S)
