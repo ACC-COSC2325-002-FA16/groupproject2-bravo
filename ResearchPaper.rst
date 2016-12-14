@@ -56,6 +56,7 @@ The Microcontroller Platform we are using is the Arduino Uno. You can order thes
 Each project uses some kind of device that ends up being controlled by the microcontroller. Describe that device and give an overview of what it might be used for. Basically, describe what is involved in interacting with the device. Again, use screen captures of diagrams from documentation is you can.
 
 With this project the Arduino communicates calculated data from the temperature sensor to the Arduino back to the LCD screen to display the final calculation which is the temperature is has taken. The Temperature sensor takes the temperature of the area around it and returns a voltage depending on what the temperature is, returning a higher or lower voltage if it's hotter or colder. The returned voltage is then converted into millivolts, which is then converted into Fahrenheit or Celsius.
+
 **Development tools**
 
 Detail the tools you needed to obtain to work with the microcontroller and the device. You also need to identify any additional software you needed to interact with your test device.
@@ -66,7 +67,7 @@ The tools that were critical to show that our project works would be the LCD scr
 
 Describe the experiment you set up. What led you to pick this particular experiment (hopefully it was not because it was easy!) Be sure to show how your experiment was set up. Show how the device is connected to the microcontroller.
 
-This experiment was set up using the Arduino board and the goal was to have it implemented C and assembly code to have the correct display of the temperature. So far we have had the concept work in C++ however we werent able to get the C code and assembly to work properly together. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
+This experiment was set up using the Arduino board and the goal was to have it implemented C and assembly code to have the correct display of the temperature. So far we have had the concept work in C++ and as well in C however we werent able to get the ADC convert to work in assembly. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
 
 **Conclusions**
 
@@ -74,7 +75,7 @@ What did you learn about hardware control from this project? Did you get any ide
 
 The Hardware exposure for this project was really surreal. This was finally the moment where we can actually see our code being put to use for a real life object that many people use on a regular basis. Yet it was and still is  a challenging project to get this done in C and assmbly interesting that something that everyone uses can be a little difficult to provide to a person. Other ideas that this could be used for would be to have the temperature not only be displayed on a LCD screen but to as well have a lighting bar that is red at the top and blue on the bottom actually show an estimate on how the temperature reading would look like on a mercury type thermometer. 
 
-
+To insure our circuitry and logic was correct, we used C++ code for the Arduino. Once we confirmed everything was working correctly, we worked on getting AVR C and Assembly. We initially ran into multiple problems with getting the sensor to input into the Arduino and mixing C with Assembly. We narrowed it down that an Analog-to-Digital converter was needed to read the Temperature Sensor. With a small amount of documentation available and for the sake of simplicity, we decided to program the Arduino using only AVR C and succeeded in getting the temperature readings. However, we did not have enough time to figure out how to convert the ADC into assembly and mix AVR C and Assembly.
 **Contributions**
 
 Include a summary of each team member’s contributions to the project.
