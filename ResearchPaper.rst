@@ -55,8 +55,7 @@ The Microcontroller Platform we are using is the Arduino Uno. You can order thes
 
 Each project uses some kind of device that ends up being controlled by the microcontroller. Describe that device and give an overview of what it might be used for. Basically, describe what is involved in interacting with the device. Again, use screen captures of diagrams from documentation is you can.
 
-With this project the Arduino communicates calculated data from the temperature sensor to the Arduino back to the LCD screen to display the final calculation which is the temperature is has taken.
-
+With this project the Arduino communicates calculated data from the temperature sensor to the Arduino back to the LCD screen to display the final calculation which is the temperature is has taken. The Temperature sensor takes the temperature of the area around it and returns a voltage depending on what the temperature is, returning a higher or lower voltage if it's hotter or colder. The returned voltage is then converted into millivolts, which is then converted into Fahrenheit or Celsius.
 **Development tools**
 
 Detail the tools you needed to obtain to work with the microcontroller and the device. You also need to identify any additional software you needed to interact with your test device.
