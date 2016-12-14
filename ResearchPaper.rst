@@ -67,7 +67,8 @@ The tools that were critical to show that our project works would be the LCD scr
 
 Describe the experiment you set up. What led you to pick this particular experiment (hopefully it was not because it was easy!) Be sure to show how your experiment was set up. Show how the device is connected to the microcontroller.
 
-This experiment was set up using the Arduino board and the goal was to have it implemented C and assembly code to have the correct display of the temperature. So far we have had the concept work in C++ and as well in C however we werent able to get the ADC convert to work in assembly. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
+This experiment was set up using the Arduino board and the goal was to have it implemented C and assembly code to have the correct display of the temperature. So far we have had the concept work in C++ and as well in AVR C however we werent able to get the ADC convert to work in assembly. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
+
 
 **Conclusions**
 
@@ -91,4 +92,20 @@ Angelo Renteria helped with the ideas and some implementation of what to do with
 
 Include a listing of the code you used for this project.
 
-The code we used is in C++ that compiled and ran correctly while the C and assmbly seems right but didnt compile or work right.
+attempts (*failed attempts, backups*)
+
+-lcdlibrary (*tried to import C lcd library*)
+
+-tempLCD (*attempt at using C calling assembly*)
+
+avr (*main folder*)
+
+-extra (*extraneous files for failed attempt*)
+
+-include (*Makefile files*)
+
+-main (*main directory for program*)
+
+--assembly_attempt (*attempt starting from assembly*)
+
+--mainCpp (*Cpp file that we tried to achieve*)
