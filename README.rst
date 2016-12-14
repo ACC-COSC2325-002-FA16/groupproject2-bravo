@@ -19,14 +19,17 @@ Our objective was to use an Arduino Uno to read the temperature of the room usin
 **Directory Notes:**
 
 - attempts *(failed attempts, backups)*
+
   - lcdlibrary *(tried to import C lcd library)*
-  - tempLCD *(attempt at using C calling assembly)*
+  - tempLCD *(attempt at using C calling assembly)* 
 - avr      *(main folder)*
+
   - extra *(extraneous files for failed attempt)*
   - include *(Makefile files)*
   - main *(main directory for program)*
+  
     - assembly_attempt *(attempt starting from assembly)*
-    - mainCpp *(Cpp file that we tried to achieve)
+    - mainCpp *(Cpp file that we tried to achieve)*
 
 =====
 Circuit Diagram
