@@ -11,3 +11,9 @@ Equipment:
 - 10k Potentiometer
 - 16x2 LCD Screen
 - Temperature Sensor
+
+=====
+Circuit Diagram
+=====
+
+.. image:: circuit_diagram.png
