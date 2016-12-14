@@ -14,7 +14,7 @@ Team Bravo: Group Project 2
 
 **Objective:**
 
-Our objective was to use an Arduino Uno to read the temperature of the room using a TMP36 sensor and output to an LCD display using AVR C and AVR Assembly. We did not achieve this goal. Our issue was getting the temperature sensor to properly input into the Arduino Uno.
+Our objective was to use an Arduino Uno to read the temperature of the room using a TMP36 sensor and output to an LCD display using AVR C and AVR Assembly. We did not achieve this goal. Our issue was getting the temperature sensor to properly input into the Arduino Uno. We believe that we needed an Analog-to-Digital Converter for this.
 
 **Directory Notes:**
 
