@@ -60,20 +60,20 @@ The tools that were critical to show that our project works would be the LCD scr
 
 Describe the experiment you set up. What led you to pick this particular experiment (hopefully it was not because it was easy!) Be sure to show how your experiment was set up. Show how the device is connected to the microcontroller.
 
-This experiment was set up using the Arduino board and implemented C and assembly code to have the correct display of the temperature. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
+This experiment was set up using the Arduino board and the goal was to have it implemented C and assembly code to have the correct display of the temperature. So far we have had the concept work in C++ however we werent able to get the C code and assembly to work properly together. We chose this project because it’s a common device that most people would use on a daily basis but wouldn’t actually think about is how these thermometers work. Even though there is other options for a thermometer (such as the old school mercury in a glass tube type deal) this is the ideal process used in the modern type of temperature takers.
 
 **Conclusions**
 
 What did you learn about hardware control from this project? Did you get any ideas for other projects you might try in the future?
 
-The Hardware exposure for this project was really surreal. This was finally the moment where we can actually see our code being put to use for a real life object that many people use on a regular basis. Yet it was challenging as well as interesting that something that everyone uses can be a little difficult to provide to a person. Other ideas that this could be used for would be to have the temperature not only be displayed on a LCD screen but to as well have a lighting bar that is red at the top and blue on the bottom actually show an estimate on how the temperature reading would look like on a mercury type thermometer. 
+The Hardware exposure for this project was really surreal. This was finally the moment where we can actually see our code being put to use for a real life object that many people use on a regular basis. Yet it was and still is  a challenging project to get this done in C and assmbly interesting that something that everyone uses can be a little difficult to provide to a person. Other ideas that this could be used for would be to have the temperature not only be displayed on a LCD screen but to as well have a lighting bar that is red at the top and blue on the bottom actually show an estimate on how the temperature reading would look like on a mercury type thermometer. 
 
 
 **Contributions**
 
 Include a summary of each team member’s contributions to the project.
 
-Colby Tang was in charge of the Arduino and did the majority of the hardware connections along with the code
+Colby Tang was in charge of the Arduino and did the majority of the hardware connections along with the C++ code
 
 Colton Eastland helped with the ideas and some implementation of what to do with the code and as well contributed to the Research Paper
 
@@ -84,3 +84,4 @@ Angelo Renteria helped with the ideas and some implementation of what to do with
 
 Include a listing of the code you used for this project.
 
+The code we used is in C++ that compiled and ran correctly while the C and assmbly seems right but didnt compile or work right.
